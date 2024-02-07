@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="em">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width,intial-sacle=1.0">
+    <title>registration form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   
+    </head>
+    <body>
+
+                <div class="wrapper">
+                
+                <div class="form-box">
+                    <div class="row">
+                        <div class="col-sm-12 ">
+                    <form action="login.html" onsubmit="return validate()" method="POST" name="formfill">
+                    <h2 >Register</h2>
+                    <div class="form-control input-box">
+                        &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp;
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" name="username" placeholder="Username" id="uname"required>
+                    </div>
+                    <div class="form-control input-box">
+                        &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;
+                        
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" name="email" placeholder="emaill"  id="email" required>
+                    </div>
+                    <div class="form-control input-box">
+                        &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="password" placeholder="password" id="pass" required>
+                    </div>
+                    <div class="form-control input-box">
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="cpassword" placeholder="Confirm Password" id="cpass" required>
+                    </div>
+                   
+                    
+                        <button type="submit" >Register</button>
+                    </form>
+                    <p class="lo"> Do you have an account? &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                        <a href="login.html">login</a>
+                        </p>
+                </div>
+            </div>
+            </div>
+            </div>
+            
+    </body>
+    <script>
+    var name=document.getElementById('uname').value;
+    var email=document.getElementById('email').value;
+    var pass=document.getElementById('pass').value;
+    var cpass=document.getElementById('cpass').value;
+
+    function validate(){
+    var name=document.getElementById('uname').value;
+    var email=document.getElementById("email").value;
+    var pass=document.getElementById('pass').value;
+    var cpass=document.getElementById('cpass').value;
+
+
+
+    var namechk=/^([a-z A-Z]{3,30})$/;
+    var emailchk=/^([a-z A-Z 0-9 \. _]+)@([a-z]{3,10})(.[a-z]{1,6})$/;
+ 
+
+
+    if(name==""){
+        
+        document.getElementById('message').innerHTML="enter the name";
+         return false;
+    }
+    else if(!namechk.test(name)){
+        document.getElementById('mes').innerHTML="enter the valid name";
+
+    }
+    else if(!emailchk.test(email)){
+        alert("Enter a valid email");
+    }
+    else if(pass>6){
+        document.getElementById('message').innerHTML="password must be greater than 6letters";
+        return false;
+    }
+    else if(pass!=cpass)
+    {
+        document.getElementById('message').innerHTML="passwords not matched";
+    }
+    else{
+        return true;
+    }
+        }
+    form.addEventListener("submit",(e)=>{
+    e.preventDefault();
+    validate();
+         })
+
+    </script>
+    
+</html>

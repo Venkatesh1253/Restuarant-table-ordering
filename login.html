@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="em">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width,intial-sacle=1.0">
+    <title>Login	</title>
+    <link rel="stylesheet" type="text/css" href="style4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   
+
+    </head>
+    <body>
+
+                <div class="wrapper" style="height:410px; margin-top:80px;">
+                
+                <div class="form-box">
+                    <div class="row">
+                        <div class="col-sm-12 ">
+                    <form action="login_home.php"  method="POST" name="formfill">
+                    <h2 style="margin-top:10px;">Login</h2>
+                   <div class="form-control input-box" style="margin-top:10px;">
+                        &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp;
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" name="username" placeholder="Username" id="uname" value="" required>
+			<span id="nameerr" class="error" style="color:red; margin-left:50px;"></span>
+                    </div>
+                    <div class="form-control input-box" style="margin-top:-50px;">
+                        &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;
+                        
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" name="email" placeholder="emaill"  id="email" required >
+			<span id="emailerr" class="error" style="color:red; margin-left:50px;"></span>
+                    </div>
+                    <div class="form-control input-box" style="margin-top:-50px;">
+                        &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="password" placeholder="password" id="pass" required>
+			<span id="passerr" class="error" style="color:red; margin-left:50px;"></span>
+                    </div>
+                   
+                   
+                    
+                        <button type="submit" >Login</button>
+                    </form>
+                    <p class="lo"> Dont  have an account? &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                        <a href="register.html">register</a>
+                        </p>
+                </div>
+            </div>
+            </div>
+            </div>
+            
+    </body>
+   
+    
+</html>

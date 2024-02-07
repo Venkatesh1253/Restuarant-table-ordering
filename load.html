@@ -1,0 +1,56 @@
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="card.css">
+<style>
+body{
+	background-image:url('i4.jpg');
+	background-size:100% 200%;
+}
+card-body{
+	opacity:1;
+}
+card{
+    background-image: rgba(0,0,0,0.5);
+
+    
+}
+h2{
+	color:white;
+}
+</style>
+</head>
+<body>
+<p id="demo"></p>
+<form action="end.html" method="POST" id="form">
+<div class="container">
+<h2 align="center" class="pt-3"><u>Food Reserving Form</u></h2><br><br>
+<div class="row">
+<div class="col-md-4"></div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-body">
+<label for="uname" class="mt-2 form-label text-primary">NAME:</label>
+<input id="uname" type="text" name="Name" class="form-control" required>
+<label for="place" class="mt-2 form-label text-primary">ROOM NUMBER:</label>
+<input id="place" type="text" list="suggest" name="place" class="form-control" required>
+<label for="place" class="mt-2 form-label text-primary">QUANTITY(Parcels):</label>
+<input id="place" type="number" list="suggest" name="place" class="form-control" min="1"parcels max="5" required>
+<label for="no" class="mt-2 form-label text-primary">CONTACT NUMBER:</label>
+<input type="tel" name="num" id="no" size="10" minlength="1" maxlength="10" class="form-control" required>
+<span id="terror"></span><br>
+<button type="submit" class="mt-2 btn btn-info text-dark">submit</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+   
+    display: flex;
+   background:url('j.webp')  ;
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    background-attachment: fixed;
+    
+    
+    align-items: center;
+   
+
+}
+.wrapper{
+    position: relative;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    margin-top: 10px;
+    margin-left: 450px;;
+    border: 2px solid rgb(243, 238, 241);
+   background: black;
+   border-radius: 10px;
+   transition: .5s;
+   margin-top: 40px;
+   height:500px;
+    
+}
+.wrapper:hover{
+    border: 2px solid #0ef;
+    box-shadow: 0 0 20px #0ef,inset 0 0 20px #0ef;
+
+}
+h2{
+    font-size: 2em;
+    text-align: center;
+    color:white;
+    transition: .5s;
+}
+.wrapper:hover h2 {
+    color:#0ef
+}
+.input-box{
+    position: relative;
+    width: 320px;
+    margin: 20px 0;
+}
+.form-box{
+
+    width: 400px;
+}
+.input-box input{
+    height: 40px;
+    width: 100%;
+    background:transparent;
+    border: 2px solid rgb(211, 207, 182);
+    outline: none;
+    border-radius: 5px;
+    color: white;
+   
+    padding: 0 10px 0 35px;
+    margin-left: 40px;
+}
+.wrapper:hover .input-box input{
+    border: 2px solid rgb(149, 230, 19);
+    box-shadow: 0 0 20px rgb(150, 248, 21),inset 0 0 20px #0ef;
+
+}
+.input-box i{
+    position: absolute;
+    color: #f0f8ff;
+    font-size:1sem;
+   line-height:85px;
+   margin-left: 10px;
+}
+
+.input-box input::placeholder{
+    color:rgb(241, 227, 185);
+}
+.wrapper a{
+    margin: -15px 0 15px;
+    color:lightblue;
+}
+
+.wrapper a:hover{
+    text-decoration: underline;
+    color:rgb(6, 31, 29);
+    background: #0ef;
+    box-shadow: 0 0 20px #0ef,inset 0 0 20px #0ef;
+}
+button{
+    position: relative;
+    width: 90%;
+    height: 36px;
+    margin-left: 20px;
+    border: green;
+    cursor: pointer;
+    outline: blue;
+    border-radius: 10px;
+    font-size:1em;
+    
+}
+.wrapper:hover button{
+    color:black;
+    background: #0ef;
+    box-shadow: 0 0 20px #0ef,inset 0 0 20px #0ef;
+
+}
+.wrapper .lo{
+    margin-left: 30px;
+    margin-top: 20px;
+    color: white;
+}
+
+.registration-link{
+    font-size: .9em;
+    text-align: center;
+  margin: 25px 0;
+}
+.registration-link p{
+    color: #f0f8ff;
+}
+.registration-link p a{
+    color:rgb(223, 30, 30);
+
+}
+.wrapper:hover .registration-link p a{
+    color: #0ef;
+}
+.popup{
+    width: 400px;
+    background-color: #f0f8ff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition: transform .4s,top .4s;
+    text-align: center;
+    padding: 0 30px 30px;
+    height: 330px;
+    color: black;
+    visibility: hidden;
+
+}
+.popup h2{
+    color: black;
+}
+.popup i{
+    color: green;
+    font-size: 50px;
+}
+.popup button{
+    width: 100%;
+    background: green;
+    padding: 10px 0;
+    margin-top: 50px;
+    border: none;
+    font-size: 10px;
+    outline: none;
+    color: #f0f8ff;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 0 2px rgba(0,0,0,.1);
+}
+.popup a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.open-slide{
+    top:50%;
+    transform: translate(-50%,-50%) scale(1);
+    visibility: visible;
+}
